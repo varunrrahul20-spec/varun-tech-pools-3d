@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varun Tech Pools | Clean Pools, Healthy Life</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    globalThis.tailwind = globalThis.tailwind || {};
+    globalThis.tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'deep-navy': '#071D65',
+            'pool-blue': '#0759C9',
+            'aqua-cyan': '#12C7EE',
+            'ice-tint': '#EAFAFF',
+            'pool-canvas': '#F5FBFF',
+            'light-primary': '#00429C',
+            'light-on-primary': '#FFFFFF',
+            'light-primary-container': '#0759C9',
+            'light-on-primary-container': '#CCD9FF',
+            'light-secondary': '#00677D',
+            'light-on-secondary': '#FFFFFF',
+            'light-secondary-container': '#39D7FF',
+            'light-on-secondary-container': '#005A6E',
+            'light-background': '#F5FBFF',
+            'light-on-background': '#001355',
+            'light-surface': '#FBF8FF',
+            'light-surface-container-lowest': '#FFFFFF',
+            'light-surface-container-low': '#F3F2FF',
+            'light-surface-container': '#ECECFF',
+            'light-surface-container-high': '#E4E7FF',
+            'light-on-surface': '#001355',
+            'light-surface-variant': '#DFE2F2',
+            'light-on-surface-variant': '#424653',
+            'light-outline': '#737785',
+            'light-outline-variant': '#C2C6D6',
+            'light-error': '#BA1A1A',
+            'light-on-error': '#FFFFFF',
+            'dark-primary': '#B0C6FF',
+            'dark-on-primary': '#002D6E',
+            'dark-primary-container': '#0759C9',
+            'dark-on-primary-container': '#CCD9FF',
+            'dark-secondary': '#6BDDFF',
+            'dark-on-secondary': '#003642',
+            'dark-secondary-container': '#00C3EA',
+            'dark-on-secondary-container': '#004C5D',
+            'dark-background': '#000D41',
+            'dark-on-background': '#DDE1FF',
+            'dark-surface': '#000D41',
+            'dark-surface-container-lowest': '#000935',
+            'dark-surface-container-low': '#001355',
+            'dark-surface-container': '#00165F',
+            'dark-surface-container-high': '#0E226A',
+            'dark-on-surface': '#DDE1FF',
+            'dark-surface-variant': '#424653',
+            'dark-on-surface-variant': '#C2C6D6',
+            'dark-outline': '#8C909F',
+            'dark-outline-variant': '#424653',
+            'dark-error': '#FFB4AB',
+            'dark-on-error': '#690005',
+          },
+          borderRadius: {
+            'sm': '6px',
+            'DEFAULT': '12px',
+            'md': '16px',
+            'lg': '24px',
+            'xl': '28px',
+            'full': '9999px',
+          },
+          spacing: {
+            'gutter-xs': '4px',
+            'gutter-sm': '8px',
+            'gutter-md': '16px',
+            'gutter-lg': '24px',
+            'gutter-xl': '32px',
+            'section-sm': '48px',
+            'section-lg': '96px',
+            'page-margin': '24px',
+          },
+          fontFamily: {
+            'display': ['"Alata"', 'sans-serif'],
+            'headline': ['"Alata"', 'sans-serif'],
+            'title': ['"Instrument Sans"', 'sans-serif'],
+            'body': ['"Instrument Sans"', 'sans-serif'],
+            'label': ['"Instrument Sans"', 'sans-serif'],
+            'mono': ['"Source Code Pro"', 'monospace'],
+          },
+          fontSize: {
+            'display-lg': ['72px', { lineHeight: '76px', letterSpacing: '-1.5px', fontWeight: '400' }],
+            'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.5px', fontWeight: '400' }],
+            'headline-lg': ['48px', { lineHeight: '54px', letterSpacing: '-1px', fontWeight: '400' }],
+            'headline-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '400' }],
+            'headline-md': ['32px', { lineHeight: '38px', letterSpacing: '-0.5px', fontWeight: '400' }],
+            'title-lg': ['20px', { lineHeight: '28px', letterSpacing: '-0.2px', fontWeight: '700' }],
+            'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+            'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+            'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+            'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+            'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '700' }],
+            'label-sm': ['11px', { lineHeight: '16px', letterSpacing: '1.5px', fontWeight: '700' }],
+            'mono-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.2px', fontWeight: '600' }],
+          },
+          transitionDuration: {
+            'state-change': '180ms',
+            'card-lift': '240ms',
+            'section-reveal': '600ms',
+          },
+          transitionTimingFunction: {
+            'state-change': 'cubic-bezier(0.2, 0, 0, 1)',
+            'card-lift': 'cubic-bezier(0.2, 0, 0, 1)',
+            'section-reveal': 'cubic-bezier(0.16, 1, 0.3, 1)',
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Instrument+Sans:wght@400;500;600;700&family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <style>
+    .material-symbols-outlined {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      line-height: 1 !important;
+      box-sizing: content-box;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+    }
+    .hero-scrim {
+      background: linear-gradient(180deg, rgba(7, 29, 101, 0.88) 0%, rgba(7, 29, 101, 0.72) 55%, rgba(7, 29, 101, 0.56) 100%);
+    }
+    @media (min-width: 768px) {
+      .hero-scrim {
+        background: linear-gradient(90deg, rgba(7, 29, 101, 0.94) 0%, rgba(7, 29, 101, 0.78) 46%, rgba(7, 89, 201, 0.14) 100%);
+      }
+    }
+    .photo-scrim {
+      background: linear-gradient(180deg, rgba(7, 29, 101, 0) 45%, rgba(7, 29, 101, 0.86) 100%);
+    }
+    .pool-fallback-art {
+      background:
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.12) 0 2px, transparent 2px 26px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.12) 0 2px, transparent 2px 26px),
+        radial-gradient(circle at 70% 30%, #39D7FF 0%, #0759C9 52%, #071D65 100%);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-light-background text-light-on-background font-body antialiased overflow-x-hidden">
+  <div class="min-h-screen flex flex-col">
+    <!-- Top accent bar -->
+    <div class="h-1 w-full bg-gradient-to-r from-deep-navy via-aqua-cyan to-pool-blue"></div>
+
+    <!-- Header -->
+    <header class="relative bg-deep-navy text-light-on-primary border-b border-dark-outline-variant/40 z-30">
+      <div class="max-w-7xl mx-auto px-page-margin py-gutter-md flex items-center justify-between gap-gutter-lg">
+        <a href="#home" class="flex items-center gap-gutter-sm group" aria-label="Varun Tech Pools home">
+          <div class="h-12 sm:h-14 rounded-md bg-white px-2 py-1 shadow-md border border-ice-tint/40 flex items-center justify-center shrink-0 transition-transform duration-state-change group-hover:scale-[1.03]">
+            <img src="assets/logo.jpg" alt="Varun Tech Pools logo" class="h-full w-auto object-contain">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display text-title-md text-light-on-primary tracking-tight leading-none">VARUN TECH</span>
+            <span class="font-label text-label-sm text-aqua-cyan uppercase mt-gutter-xs leading-none">Pools &amp; Water Care</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main navigation" class="hidden md:flex items-center gap-gutter-xl">
+          <a href="#services" class="font-label text-label-lg text-dark-on-surface hover:text-aqua-cyan transition-colors duration-state-change">Services</a>
+          <a href="#about" class="font-label text-label-lg text-dark-on-surface hover:text-aqua-cyan transition-colors duration-state-change">About</a>
+          <a href="#construction" class="font-label text-label-lg text-dark-on-surface hover:text-aqua-cyan transition-colors duration-state-change">Construction</a>
+          <a href="#customizer" class="font-label text-label-lg text-dark-on-surface hover:text-aqua-cyan transition-colors duration-state-change">3D Studio</a>
+          <a href="#contact" class="inline-flex items-center justify-center gap-gutter-xs rounded-full bg-light-surface-container-lowest text-deep-navy px-gutter-lg py-gutter-sm font-label text-label-lg transition-transform duration-state-change ease-state-change hover:-translate-y-0.5">
+            <span>Get in touch</span>
+            <span class="material-symbols-outlined text-body-md" aria-hidden="true">arrow_outward</span>
+          </a>
+        </nav>
+
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full bg-dark-surface-container text-light-on-primary border border-dark-outline-variant">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden md:hidden bg-dark-surface-container-low border-t border-dark-outline-variant px-page-margin py-gutter-lg">
+        <div class="flex flex-col gap-gutter-md">
+          <a href="#services" class="font-label text-label-lg text-dark-on-surface py-gutter-xs">Services</a>
+          <a href="#about" class="font-label text-label-lg text-dark-on-surface py-gutter-xs">About</a>
+          <a href="#construction" class="font-label text-label-lg text-dark-on-surface py-gutter-xs">Construction</a>
+          <a href="#customizer" class="font-label text-label-lg text-dark-on-surface py-gutter-xs">3D Studio</a>
+          <a href="#contact" class="inline-flex items-center justify-center gap-gutter-sm rounded-full bg-aqua-cyan text-deep-navy px-gutter-lg py-gutter-md font-label text-label-lg">
+            <span>Get in touch</span>
+            <span class="material-symbols-outlined text-body-md" aria-hidden="true">arrow_outward</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <!-- 3D Hero Section -->
+      <section id="home" class="relative min-h-[820px] lg:min-h-[880px] bg-gradient-to-br from-deep-navy via-pool-blue to-dark-surface flex items-center overflow-hidden">
+        <canvas id="pool3d" class="absolute inset-0 w-full h-full block cursor-pointer" aria-label="Interactive 3D swimming pool water scene"></canvas>
+        <div class="hero-scrim absolute inset-0 pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto w-full px-page-margin py-section-lg">
+          <div class="max-w-2xl flex flex-col items-start gap-gutter-lg">
+            <span role="status" class="inline-flex items-center gap-gutter-sm rounded-full px-gutter-md py-gutter-xs bg-dark-surface-container/90 text-ice-tint border border-aqua-cyan/40 font-label text-label-sm uppercase backdrop-blur-md">
+              <span class="w-2 h-2 rounded-full bg-aqua-cyan animate-pulse" aria-hidden="true"></span>
+              <span>Pool care • Repairs • Construction</span>
+            </span>
+
+            <h1 class="font-display text-display-lg-mobile md:text-display-lg text-light-on-primary text-balance uppercase">
+              Make a <span class="text-aqua-cyan">splash.</span><br>We care.
+            </h1>
+
+            <p class="font-body text-body-lg text-ice-tint text-pretty max-w-prose">
+              From crystal-clear water to complete pool construction, Varun Tech Pools keeps your swimming pool beautiful, healthy, and ready to enjoy.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-gutter-md pt-gutter-xs">
+              <a href="#contact" class="inline-flex items-center justify-center gap-gutter-sm rounded-full bg-light-primary text-light-on-primary px-gutter-lg py-gutter-md font-label text-label-lg shadow-lg border border-aqua-cyan/40 transition-transform duration-state-change ease-state-change hover:-translate-y-0.5 hover:bg-light-primary-container">
+                <span>Request a service</span>
+                <span class="material-symbols-outlined text-body-md" aria-hidden="true">arrow_outward</span>
+              </a>
+
+              <a href="#customizer" class="inline-flex items-center justify-center gap-gutter-sm rounded-full bg-dark-surface-container/80 text-light-on-primary border border-ice-tint/40 px-gutter-lg py-gutter-md font-label text-label-lg backdrop-blur-md transition-transform duration-state-change ease-state-change hover:-translate-y-0.5 hover:bg-dark-surface-container-high">
+                <span class="material-symbols-outlined text-body-md text-aqua-cyan" aria-hidden="true">view_in_ar</span>
+                <span>Open 3D Studio</span>
+              </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter-md pt-gutter-xl w-full border-t border-ice-tint/20">
+              <div class="flex items-center gap-gutter-sm text-ice-tint">
+                <span class="material-symbols-outlined text-aqua-cyan" aria-hidden="true">auto_awesome</span>
+                <span class="font-body text-body-sm">Cleaning &amp; maintenance</span>
+              </div>
+              <div class="flex items-center gap-gutter-sm text-ice-tint">
+                <span class="material-symbols-outlined text-aqua-cyan" aria-hidden="true">cyclone</span>
+                <span class="font-body text-body-sm">Filter &amp; pump care</span>
+              </div>
+              <div class="flex items-center gap-gutter-sm text-ice-tint">
+                <span class="material-symbols-outlined text-aqua-cyan" aria-hidden="true">pool</span>
+                <span class="font-body text-body-sm">Pool construction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subtle Interactive 3D Cue -->
+        <div class="hidden md:flex items-center gap-gutter-xs absolute bottom-gutter-lg right-gutter-lg z-10 rounded-full px-gutter-md py-gutter-xs bg-dark-surface-container/80 border border-aqua-cyan/30 text-ice-tint font-label text-label-sm uppercase backdrop-blur-md pointer-events-none">
+          <span class="material-symbols-outlined text-aqua-cyan text-body-sm" aria-hidden="true">water</span>
+          <span>Live 3D Caustics · Click Water to Ripple</span>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="bg-light-background py-section-lg px-page-margin">
+        <div class="max-w-7xl mx-auto flex flex-col gap-gutter-xl">
+          <div class="reveal flex flex-col gap-gutter-sm max-w-2xl">
+            <span class="font-label text-label-sm uppercase text-light-secondary">What we do</span>
+            <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-deep-navy text-balance">
+              Complete pool care. One trusted team.
+            </h2>
+            <p class="font-body text-body-md text-light-on-surface-variant text-pretty">
+              Reliable pool services to help keep your water clean, your equipment working, and your pool looking its best.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-lg items-stretch">
+            <article class="reveal h-full flex flex-col gap-gutter-md p-gutter-lg rounded-lg bg-light-surface-container-lowest border border-light-outline-variant shadow-sm transition-transform duration-card-lift ease-card-lift hover:-translate-y-1.5 hover:shadow-lg">
+              <header class="flex flex-col gap-gutter-md">
+                <div class="w-12 h-12 rounded-md bg-light-primary-container text-light-on-primary flex items-center justify-center shadow-sm">
+                  <span class="material-symbols-outlined" aria-hidden="true">water_drop</span>
+                </div>
+                <h3 class="font-title text-title-lg text-deep-navy">Pool Cleaning</h3>
+              </header>
+              <div>
+                <p class="font-body text-body-sm text-light-on-surface-variant text-pretty">
+                  Regular pool cleaning and care to maintain a fresh, inviting swimming environment.
+                </p>
+              </div>
+            </article>
+
+            <article class="reveal h-full flex flex-col gap-gutter-md p-gutter-lg rounded-lg bg-light-surface-container-lowest border border-light-outline-variant shadow-sm transition-transform duration-card-lift ease-card-lift hover:-translate-y-1.5 hover:shadow-lg">
+              <header class="flex flex-col gap-gutter-md">
+                <div class="w-12 h-12 rounded-md bg-light-primary-container text-light-on-primary flex items-center justify-center shadow-sm">
+                  <span class="material-symbols-outlined" aria-hidden="true">build</span>
+                </div>
+                <h3 class="font-title text-title-lg text-deep-navy">Repairs &amp; Maintenance</h3>
+              </header>
+              <div>
+                <p class="font-body text-body-sm text-light-on-surface-variant text-pretty">
+                  Pool repair and maintenance support to keep your pool in great working condition.
+                </p>
+              </div>
+            </article>
+
+            <article class="reveal h-full flex flex-col gap-gutter-md p-gutter-lg rounded-lg bg-light-surface-container-lowest border border-light-outline-variant shadow-sm transition-transform duration-card-lift ease-card-lift hover:-translate-y-1.5 hover:shadow-lg">
+              <header class="flex flex-col gap-gutter-md">
+                <div class="w-12 h-12 rounded-md bg-light-primary-container text-light-on-primary flex items-center justify-center shadow-sm">
+                  <span class="material-symbols-outlined" aria-hidden="true">cyclone</span>
+                </div>
+                <h3 class="font-title text-title-lg text-deep-navy">Filter &amp; Pump Services</h3>
+              </header>
+              <div>
+                <p class="font-body text-body-sm text-light-on-surface-variant text-pretty">
+                  Filter and pump service to support smooth circulation and effective filtration.
+                </p>
+              </div>
+            </article>
+
+            <article class="reveal h-full flex flex-col gap-gutter-md p-gutter-lg rounded-lg bg-light-surface-container-lowest border border-light-outline-variant shadow-sm transition-transform duration-card-lift ease-card-lift hover:-translate-y-1.5 hover:shadow-lg">
+              <header class="flex flex-col gap-gutter-md">
+                <div class="w-12 h-12 rounded-md bg-light-primary-container text-light-on-primary flex items-center justify-center shadow-sm">
+                  <span class="material-symbols-outlined" aria-hidden="true">science</span>
+                </div>
+                <h3 class="font-title text-title-lg text-deep-navy">Water Treatment</h3>
+              </header>
+              <div>
+                <p class="font-body text-body-sm text-light-on-surface-variant text-pretty">
+                  Water treatment solutions to help maintain clean, balanced pool water.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About / Promise Section -->
+      <section id="about" class="bg-light-surface-container-lowest py-section-lg px-page-margin border-y border-light-outline-variant/60">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter-xl items-center">
+          <div class="reveal relative rounded-xl overflow-hidden shadow-lg aspect-[4/3] pool-fallback-art">
+            <img src="assets/about-pool.jpg" alt="Crystal clear turquoise swimming pool with sunlit mosaic tiles and stainless steel ladder" class="w-full h-full object-cover" onerror="this.style.display='none'">
+            <div class="photo-scrim absolute inset-0"></div>
+            <div class="absolute bottom-gutter-lg left-gutter-lg right-gutter-lg flex items-center justify-between">
+              <span class="font-headline text-headline-md text-light-on-primary">Your Pool. Our Care.</span>
+            </div>
+          </div>
+
+          <div class="reveal flex flex-col items-start gap-gutter-lg lg:pl-gutter-xl">
+            <div class="flex flex-col gap-gutter-sm">
+              <span class="font-label text-label-sm uppercase text-light-secondary">The Varun Tech Pools promise</span>
+              <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-deep-navy text-balance">
+                Clean pools. Healthy life.
+              </h2>
+              <p class="font-body text-body-md text-light-on-surface-variant text-pretty">
+                We bring together practical pool-care services and construction solutions, with attention to the details that make a pool enjoyable.
+              </p>
+            </div>
+
+            <ul class="flex flex-col gap-gutter-md w-full">
+              <li class="flex items-center gap-gutter-sm">
+                <span class="w-6 h-6 rounded-full bg-light-primary text-light-on-primary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-body-sm" aria-hidden="true">check</span>
+                </span>
+                <span class="font-body text-body-md text-deep-navy">Swimming pool cleaning and routine care</span>
+              </li>
+              <li class="flex items-center gap-gutter-sm">
+                <span class="w-6 h-6 rounded-full bg-light-primary text-light-on-primary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-body-sm" aria-hidden="true">check</span>
+                </span>
+                <span class="font-body text-body-md text-deep-navy">Repairs, maintenance and equipment support</span>
+              </li>
+              <li class="flex items-center gap-gutter-sm">
+                <span class="w-6 h-6 rounded-full bg-light-primary text-light-on-primary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-body-sm" aria-hidden="true">check</span>
+                </span>
+                <span class="font-body text-body-md text-deep-navy">Filter, pump and water treatment solutions</span>
+              </li>
+              <li class="flex items-center gap-gutter-sm">
+                <span class="w-6 h-6 rounded-full bg-light-primary text-light-on-primary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-body-sm" aria-hidden="true">check</span>
+                </span>
+                <span class="font-body text-body-md text-deep-navy">New pool construction and renovation work</span>
+              </li>
+            </ul>
+
+            <a href="#contact" class="inline-flex items-center justify-center gap-gutter-sm rounded-full bg-light-primary text-light-on-primary px-gutter-lg py-gutter-md font-label text-label-lg shadow-md transition-transform duration-state-change ease-state-change hover:-translate-y-0.5 hover:bg-light-primary-container">
+              <span>Talk to our team</span>
+              <span class="material-symbols-outlined text-body-md" aria-hidden="true">arrow_outward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Construction Section -->
+      <section id="construction" class="bg-gradient-to-br from-deep-navy via-dark-surface-container to-pool-blue text-light-on-primary py-section-lg px-page-margin relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter-xl items-center relative z-10">
+          <div class="reveal flex flex-col gap-gutter-sm">
+            <span class="font-label text-label-sm uppercase text-aqua-cyan">Designed for your space</span>
+            <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-light-on-primary text-balance">
+              Your dream pool starts here.
+            </h2>
+            <p class="font-body text-body-md text-ice-tint text-pretty max-w-prose">
+              Planning a new pool or refreshing an existing one? Explore our swimming pool construction and renovation services.
+            </p>
+          </div>
+
+          <div class="reveal grid grid-cols-1 sm:grid-cols-2 gap-gutter-md items-stretch">
+            <a href="#contact" class="h-full flex flex-col gap-gutter-xs p-gutter-lg rounded-md bg-dark-surface-container/80 border border-ice-tint/20 text-dark-on-surface transition-transform duration-card-lift ease-card-lift hover:-translate-y-1 hover:border-aqua-cyan/50">
+              <h3 class="font-title text-title-md text-light-on-primary">New pool construction</h3>
+              <p class="font-body text-body-sm text-ice-tint">Build a pool planned around your space.</p>
+            </a>
+
+            <a href="#contact" class="h-full flex flex-col gap-gutter-xs p-gutter-lg rounded-md bg-dark-surface-container/80 border border-ice-tint/20 text-dark-on-surface transition-transform duration-card-lift ease-card-lift hover:-translate-y-1 hover:border-aqua-cyan/50">
+              <h3 class="font-title text-title-md text-light-on-primary">Renovation &amp; remodeling</h3>
+              <p class="font-body text-body-sm text-ice-tint">Refresh and improve an existing pool.</p>
+            </a>
+
+            <a href="#contact" class="h-full flex flex-col gap-gutter-xs p-gutter-lg rounded-md bg-dark-surface-container/80 border border-ice-tint/20 text-dark-on-surface transition-transform duration-card-lift ease-card-lift hover:-translate-y-1 hover:border-aqua-cyan/50">
+              <h3 class="font-title text-title-md text-light-on-primary">Tile fixing &amp; waterproofing</h3>
+              <p class="font-body text-body-sm text-ice-tint">Pool finishing and waterproofing solutions.</p>
+            </a>
+
+            <a href="#contact" class="h-full flex flex-col gap-gutter-xs p-gutter-lg rounded-md bg-dark-surface-container/80 border border-ice-tint/20 text-dark-on-surface transition-transform duration-card-lift ease-card-lift hover:-translate-y-1 hover:border-aqua-cyan/50">
+              <h3 class="font-title text-title-md text-light-on-primary">Complete pool setup</h3>
+              <p class="font-body text-body-sm text-ice-tint">Support for a complete pool setup.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive 3D Pool Customizer & AR Backyard Preview -->
+      <section id="customizer" class="bg-light-surface-container-lowest py-section-lg px-page-margin border-b border-light-outline-variant/60">
+        <div class="max-w-7xl mx-auto flex flex-col gap-gutter-xl">
+          <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-gutter-lg">
+            <div class="flex flex-col gap-gutter-sm max-w-2xl">
+              <span class="font-label text-label-sm uppercase text-light-secondary">Interactive 3D &amp; AR Studio</span>
+              <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-deep-navy text-balance">
+                Design your pool in 3D. Preview it in your backyard.
+              </h2>
+              <p class="font-body text-body-md text-light-on-surface-variant text-pretty">
+                Customize shape, dimensions, mosaic tile finish, deck coping, and underwater LED lighting—then toggle Daylight or Twilight mode, splash the water, or preview in AR Backyard.
+              </p>
+            </div>
+
+            <!-- View Mode Switcher -->
+            <div class="inline-flex items-center p-gutter-xs rounded-full bg-light-surface-container border border-light-outline-variant shrink-0 self-start md:self-auto" role="tablist" aria-label="3D preview mode">
+              <button id="mode-3d-btn" type="button" role="tab" aria-selected="true" class="inline-flex items-center gap-gutter-xs rounded-full px-gutter-lg py-gutter-sm bg-light-primary text-light-on-primary font-label text-label-lg transition-colors duration-state-change">
+                <span class="material-symbols-outlined text-body-md" aria-hidden="true">view_in_ar</span>
+                <span>3D Model</span>
+              </button>
+              <button id="mode-ar-btn" type="button" role="tab" aria-selected="false" class="inline-flex items-center gap-gutter-xs rounded-full px-gutter-lg py-gutter-sm text-light-on-surface-variant font-label text-label-lg transition-colors duration-state-change hover:text-deep-navy">
+                <span class="material-symbols-outlined text-body-md" aria-hidden="true">photo_camera</span>
+                <span>AR Backyard</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="reveal grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-stretch">
+            <!-- 3D / AR Interactive Stage -->
+            <div id="studio-stage" class="lg:col-span-8 relative rounded-xl overflow-hidden bg-deep-navy border border-light-outline-variant shadow-lg min-h-[460px] flex flex-col justify-between">
+              <!-- AR Backyard Background Photo (visible in AR mode) -->
+              <img id="ar-backyard-img" src="assets/ar-backyard.jpg" alt="Modern backyard patio and lawn for AR pool placement preview" class="hidden absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'">
+
+              <!-- Interactive Three.js Canvas -->
+              <canvas id="customizer3d" class="relative z-10 w-full flex-1 block cursor-grab active:cursor-grabbing" aria-label="Interactive 3D pool model customizer canvas"></canvas>
+
+              <!-- Top HUD Overlay -->
+              <div class="absolute top-gutter-md left-gutter-md right-gutter-md z-20 flex flex-wrap items-center justify-between gap-gutter-sm pointer-events-none">
+                <span class="inline-flex items-center gap-gutter-xs rounded-full px-gutter-md py-gutter-xs bg-dark-surface-container/90 text-ice-tint border border-aqua-cyan/40 font-label text-label-sm uppercase backdrop-blur-md">
+                  <span class="w-2 h-2 rounded-full bg-aqua-cyan" aria-hidden="true"></span>
+                  <span id="stage-status-text">3D Orbit Active · Drag to Rotate · Click Water to Ripple</span>
+                </span>
+
+                <div class="flex flex-wrap items-center gap-gutter-xs pointer-events-auto">
+                  <button id="lighting-toggle-btn" type="button" class="inline-flex items-center gap-gutter-xs rounded-full px-gutter-md py-gutter-xs bg-dark-surface-container/90 text-ice-tint border border-ice-tint/30 font-label text-label-sm hover:bg-dark-surface-container-high backdrop-blur-md">
+                    <span id="lighting-icon" class="material-symbols-outlined text-body-sm text-aqua-cyan" aria-hidden="true">light_mode</span>
+                    <span id="lighting-label">Daylight</span>
+                  </button>
+                  <button id="auto-orbit-btn" type="button" aria-pressed="true" class="inline-flex items-center gap-gutter-xs rounded-full px-gutter-md py-gutter-xs bg-aqua-cyan text-deep-navy border border-aqua-cyan font-label text-label-sm transition-colors">
+                    <span class="material-symbols-outlined text-body-sm" aria-hidden="true">360</span>
+                    <span>Auto-Orbit</span>
+                  </button>
+                  <button id="reset-camera-btn" type="button" class="inline-flex items-center gap-gutter-xs rounded-full px-gutter-md py-gutter-xs bg-dark-surface-container/90 text-ice-tint border border-ice-tint/30 font-label text-label-sm hover:bg-dark-surface-container-high backdrop-blur-md">
+                    <span class="material-symbols-outlined text-body-sm" aria-hidden="true">center_focus_strong</span>
+                    <span>Reset</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Bottom AR Scale, Camera Presets & Spec HUD -->
+              <div class="relative z-20 bg-dark-surface-container/90 border-t border-ice-tint/20 px-gutter-lg py-gutter-md flex flex-wrap items-center justify-between gap-gutter-md text-ice-tint backdrop-blur-md">
+                <div class="flex flex-col">
+                  <span class="font-label text-label-sm uppercase text-aqua-cyan">Active Config</span>
+                  <span id="stage-spec-readout" class="font-body text-body-sm text-light-on-primary">Rectangular · 24 × 12 ft · Marine Cobalt</span>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-gutter-sm">
+                  <div class="inline-flex items-center gap-gutter-xs" aria-label="Camera view presets">
+                    <button type="button" data-cam-preset="overview" class="rounded-full px-gutter-sm py-gutter-xs bg-dark-surface-container-high text-ice-tint border border-ice-tint/20 font-label text-label-sm hover:border-aqua-cyan">3/4 View</button>
+                    <button type="button" data-cam-preset="waterline" class="rounded-full px-gutter-sm py-gutter-xs bg-dark-surface-container-high text-ice-tint border border-ice-tint/20 font-label text-label-sm hover:border-aqua-cyan">Waterline</button>
+                    <button type="button" data-cam-preset="top" class="rounded-full px-gutter-sm py-gutter-xs bg-dark-surface-container-high text-ice-tint border border-ice-tint/20 font-label text-label-sm hover:border-aqua-cyan">Top Plan</button>
+                  </div>
+
+                  <div id="ar-scale-controls" class="hidden items-center gap-gutter-sm">
+                    <label for="ar-scale-slider" class="font-label text-label-sm uppercase text-ice-tint">AR Scale</label>
+                    <input id="ar-scale-slider" type="range" min="70" max="125" value="100" class="w-24 accent-aqua-cyan cursor-pointer">
+                    <span id="ar-scale-val" class="font-mono text-body-sm tabular-nums text-aqua-cyan">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Customizer Controls Panel -->
+            <div class="lg:col-span-4 flex flex-col justify-between gap-gutter-lg p-gutter-lg rounded-xl bg-light-background border border-light-outline-variant shadow-sm">
+              <div class="flex flex-col gap-gutter-lg">
+                <!-- Pool Shape -->
+                <div class="flex flex-col gap-gutter-sm">
+                  <span class="font-label text-label-sm uppercase text-light-secondary">1. Pool Shape</span>
+                  <div class="grid grid-cols-3 gap-gutter-xs" data-control-group="shape">
+                    <button type="button" data-shape="rectangular" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-primary text-light-on-primary font-body text-body-sm border border-light-primary transition-colors duration-state-change">Rectangle</button>
+                    <button type="button" data-shape="l-shaped" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">L-Shaped</button>
+                    <button type="button" data-shape="infinity" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">Infinity</button>
+                  </div>
+                </div>
+
+                <!-- Dimensions -->
+                <div class="flex flex-col gap-gutter-sm">
+                  <span class="font-label text-label-sm uppercase text-light-secondary">2. Dimensions</span>
+                  <div class="grid grid-cols-3 gap-gutter-xs" data-control-group="size">
+                    <button type="button" data-size="20 × 10 ft" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">20 × 10 ft</button>
+                    <button type="button" data-size="24 × 12 ft" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-primary text-light-on-primary font-body text-body-sm border border-light-primary transition-colors duration-state-change">24 × 12 ft</button>
+                    <button type="button" data-size="32 × 16 ft" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">32 × 16 ft</button>
+                  </div>
+                </div>
+
+                <!-- Interior Tile Finish -->
+                <div class="flex flex-col gap-gutter-sm">
+                  <span class="font-label text-label-sm uppercase text-light-secondary">3. Interior Tile Finish</span>
+                  <div class="grid grid-cols-2 gap-gutter-xs" data-control-group="tile">
+                    <button type="button" data-tile="Marine Cobalt" class="customizer-opt rounded-md px-gutter-sm py-gutter-sm bg-light-primary text-light-on-primary font-body text-body-sm border border-light-primary transition-colors duration-state-change">Marine Cobalt</button>
+                    <button type="button" data-tile="Crystal Aqua" class="customizer-opt rounded-md px-gutter-sm py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">Crystal Aqua</button>
+                    <button type="button" data-tile="Deep Lagoon" class="customizer-opt rounded-md px-gutter-sm py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">Deep Lagoon</button>
+                    <button type="button" data-tile="Pearl Slate" class="customizer-opt rounded-md px-gutter-sm py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">Pearl Slate</button>
+                  </div>
+                </div>
+
+                <!-- Deck Coping -->
+                <div class="flex flex-col gap-gutter-sm">
+                  <span class="font-label text-label-sm uppercase text-light-secondary">4. Deck Coping</span>
+                  <div class="grid grid-cols-3 gap-gutter-xs" data-control-group="deck">
+                    <button type="button" data-deck="Travertine" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-primary text-light-on-primary font-body text-body-sm border border-light-primary transition-colors duration-state-change">Travertine</button>
+                    <button type="button" data-deck="Sandstone" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">Sandstone</button>
+                    <button type="button" data-deck="Granite" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">Granite</button>
+                  </div>
+                </div>
+
+                <!-- Underwater LED -->
+                <div class="flex flex-col gap-gutter-sm">
+                  <span class="font-label text-label-sm uppercase text-light-secondary">5. Underwater LED Lighting</span>
+                  <div class="grid grid-cols-2 gap-gutter-xs" data-control-group="led">
+                    <button type="button" data-led="Cyan Glow" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-primary text-light-on-primary font-body text-body-sm border border-light-primary transition-colors duration-state-change">Cyan Glow</button>
+                    <button type="button" data-led="Warm White" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">Warm White</button>
+                    <button type="button" data-led="Aurora RGB" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">Aurora RGB</button>
+                    <button type="button" data-led="Off" class="customizer-opt rounded-md px-gutter-xs py-gutter-sm bg-light-surface-container-lowest text-deep-navy font-body text-body-sm border border-light-outline-variant hover:border-light-primary transition-colors duration-state-change">Off</button>
+                  </div>
+                </div>
+              </div>
+
+              <a id="sync-quote-btn" href="#contact" class="inline-flex items-center justify-center gap-gutter-sm rounded-full bg-light-primary text-light-on-primary px-gutter-lg py-gutter-md font-label text-label-lg shadow-md transition-transform duration-state-change ease-state-change hover:-translate-y-0.5 hover:bg-light-primary-container w-full">
+                <span>Quote This Design</span>
+                <span class="material-symbols-outlined text-body-md" aria-hidden="true">arrow_outward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact & Consultation Quote Request Section -->
+      <section id="contact" class="bg-light-background py-section-lg px-page-margin">
+        <div class="max-w-7xl mx-auto">
+          <article class="reveal grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl p-gutter-xl rounded-xl bg-light-surface-container-lowest border border-light-outline-variant shadow-md items-start">
+            <!-- Left: Direct Contact Info -->
+            <div class="lg:col-span-5 flex flex-col gap-gutter-lg">
+              <div class="flex flex-col gap-gutter-xs">
+                <span class="font-label text-label-sm uppercase text-light-secondary">Let's talk pools</span>
+                <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-deep-navy text-balance">
+                  Ready for cleaner, better pools?
+                </h2>
+                <p class="font-body text-body-md text-light-on-surface-variant text-pretty">
+                  Contact Varun Tech Pools for cleaning, repairs, maintenance or custom construction enquiries.
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-gutter-xs">
+                <a href="tel:+919642416913" class="font-mono text-mono-md tabular-nums text-light-primary hover:underline">+91 96424 16913</a>
+                <a href="tel:+919177746913" class="font-mono text-mono-md tabular-nums text-light-primary hover:underline">+91 91777 46913</a>
+              </div>
+
+              <p class="font-body text-body-md text-light-on-surface-variant">
+                <strong class="text-light-primary font-semibold">Contact person:</strong> K. Rathna Kumar
+              </p>
+
+              <div class="flex flex-wrap gap-gutter-sm pt-gutter-xs">
+                <a href="tel:+919642416913" class="inline-flex items-center justify-center gap-gutter-sm rounded-full bg-light-primary text-light-on-primary px-gutter-lg py-gutter-md font-label text-label-lg shadow-lg border border-aqua-cyan/40 transition-transform duration-state-change ease-state-change hover:-translate-y-0.5 hover:bg-light-primary-container">
+                  <span class="material-symbols-outlined text-body-md" aria-hidden="true">call</span>
+                  <span>Call now</span>
+                </a>
+
+                <a href="https://wa.me/919642416913" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-gutter-sm rounded-full bg-ice-tint text-light-primary border border-light-outline-variant px-gutter-lg py-gutter-md font-label text-label-lg transition-transform duration-state-change ease-state-change hover:-translate-y-0.5">
+                  <span>WhatsApp</span>
+                  <span class="material-symbols-outlined text-body-md" aria-hidden="true">arrow_outward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Consultation & Quote Request Form -->
+            <div class="lg:col-span-7 bg-light-background p-gutter-lg rounded-lg border border-light-outline-variant">
+              <form id="quote-form" class="flex flex-col gap-gutter-md" novalidate>
+                <div class="flex flex-col gap-gutter-xs">
+                  <h3 class="font-title text-title-lg text-deep-navy">Consultation &amp; Quote Request</h3>
+                  <p class="font-body text-body-sm text-light-on-surface-variant">
+                    Share your pool details or selected 3D design for a tailored site visit and estimate.
+                  </p>
+                </div>
+
+                <!-- Live 3D Spec Badge -->
+                <div class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-md bg-ice-tint border border-light-outline-variant">
+                  <div class="flex items-center gap-gutter-xs">
+                    <span class="material-symbols-outlined text-light-primary text-body-md" aria-hidden="true">view_in_ar</span>
+                    <span id="form-spec-summary" class="font-body text-body-sm text-deep-navy font-medium">3D Design: Rectangular · 24 × 12 ft · Marine Cobalt</span>
+                  </div>
+                  <a href="#customizer" class="font-label text-label-sm uppercase text-light-primary hover:underline shrink-0">Edit 3D</a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter-md">
+                  <div class="flex flex-col gap-gutter-xs">
+                    <label for="q-name" class="font-label text-label-lg text-deep-navy">Full Name</label>
+                    <input id="q-name" name="name" type="text" required placeholder="e.g., Arjun Reddy" class="rounded-md border border-light-outline-variant bg-light-surface-container-lowest px-gutter-md py-gutter-sm font-body text-body-md text-deep-navy focus:border-light-primary focus:ring-light-primary">
+                  </div>
+                  <div class="flex flex-col gap-gutter-xs">
+                    <label for="q-phone" class="font-label text-label-lg text-deep-navy">Phone / WhatsApp</label>
+                    <input id="q-phone" name="phone" type="tel" required placeholder="+91 98765 43210" class="rounded-md border border-light-outline-variant bg-light-surface-container-lowest px-gutter-md py-gutter-sm font-body text-body-md text-deep-navy focus:border-light-primary focus:ring-light-primary">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter-md">
+                  <div class="flex flex-col gap-gutter-xs">
+                    <label for="q-service" class="font-label text-label-lg text-deep-navy">Service Needed</label>
+                    <select id="q-service" name="service" class="rounded-md border border-light-outline-variant bg-light-surface-container-lowest px-gutter-md py-gutter-sm font-body text-body-md text-deep-navy focus:border-light-primary focus:ring-light-primary">
+                      <option value="New Pool Construction">New Pool Construction</option>
+                      <option value="Pool Cleaning & Routine Care">Pool Cleaning &amp; Routine Care</option>
+                      <option value="Repairs & Maintenance">Repairs &amp; Maintenance</option>
+                      <option value="Filter & Pump Service">Filter &amp; Pump Service</option>
+                      <option value="Renovation & Waterproofing">Renovation &amp; Waterproofing</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-gutter-xs">
+                    <label for="q-city" class="font-label text-label-lg text-deep-navy">Site Location / City</label>
+                    <input id="q-city" name="city" type="text" placeholder="e.g., Hyderabad" class="rounded-md border border-light-outline-variant bg-light-surface-container-lowest px-gutter-md py-gutter-sm font-body text-body-md text-deep-navy focus:border-light-primary focus:ring-light-primary">
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-gutter-xs">
+                  <label for="q-notes" class="font-label text-label-lg text-deep-navy">Project Notes</label>
+                  <textarea id="q-notes" name="notes" rows="3" placeholder="Share backyard access, preferred timeline, or existing pool condition..." class="rounded-md border border-light-outline-variant bg-light-surface-container-lowest px-gutter-md py-gutter-sm font-body text-body-md text-deep-navy focus:border-light-primary focus:ring-light-primary"></textarea>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-between gap-gutter-md pt-gutter-xs">
+                  <a id="request-consultation-btn" href="https://wa.me/919642416913" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-gutter-sm rounded-full bg-light-primary text-light-on-primary px-gutter-lg py-gutter-md font-label text-label-lg shadow-md transition-transform duration-state-change ease-state-change hover:-translate-y-0.5 hover:bg-light-primary-container">
+                    <span>Request Consultation</span>
+                    <span class="material-symbols-outlined text-body-md" aria-hidden="true">send</span>
+                  </a>
+                  <span class="font-body text-body-sm text-light-on-surface-variant">Response within 24 hours</span>
+                </div>
+
+                <!-- Confirmation Banner -->
+                <div id="quote-confirmation" class="hidden rounded-md bg-ice-tint border border-light-primary p-gutter-md flex items-start gap-gutter-sm" role="status">
+                  <span class="material-symbols-outlined text-light-primary shrink-0" aria-hidden="true">check_circle</span>
+                  <div class="flex flex-col gap-gutter-xs">
+                    <strong class="font-title text-title-md text-deep-navy">Consultation request received</strong>
+                    <p id="quote-confirmation-msg" class="font-body text-body-sm text-light-on-surface-variant">
+                      Thank you! K. Rathna Kumar's team will reach out shortly with an estimate.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-deep-navy text-ice-tint py-gutter-lg px-page-margin border-t border-dark-outline-variant/40">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-gutter-md">
+        <div class="flex items-center gap-gutter-sm">
+          <div class="h-10 rounded-sm bg-white px-1.5 py-0.5 flex items-center justify-center shrink-0">
+            <img src="assets/logo.jpg" alt="Varun Tech Pools logo" class="h-full w-auto object-contain">
+          </div>
+          <span class="font-body text-body-sm">
+            <strong class="font-semibold text-light-on-primary">VARUN TECH POOLS</strong> · Clean Pools, Healthy Life
+          </span>
+        </div>
+        <span class="font-body text-body-sm">
+          © <span id="year">2026</span> Varun Tech Pools. All rights reserved.
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <script defer src="js/pool-3d-shared.js"></script>
+  <script defer src="js/pool-3d-hero.js"></script>
+  <script defer src="js/pool-3d-studio.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
